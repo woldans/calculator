@@ -7,7 +7,7 @@ int main(){
     printf("Welcome to my calculator.\nPress enter to continue...");
     getchar();
 
-    while(1){
+dongu:
 
         printf("\nEnter 1 for addition\nEnter 2 for subtraction\nEnter 3 for multiplication\nEnter 4 for division\nEnter x for closing the program\n----------------------------------------\n► ");
         scanf("%c",&answer);
@@ -36,14 +36,13 @@ int main(){
             result = number_one/number_two;
 
         case 'x':
-            break;
+            return 0;
 
         default:
             printf("Please enter a valid operation.\n");
+            goto dongu;
         }
 
-        if 
         printf("The result is: %d\n",result);
-
-    }
+        goto dongu;
 }

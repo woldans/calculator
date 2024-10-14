@@ -19,21 +19,25 @@ dongu:
             printf("\n\nPlease enter the numbers that you wanna add up.\n► ");
             scanf("%d %d",&number_one,&number_two);
             result = number_one+number_two;
+            break;
         
         case '2':
             printf("\n\nPlease enter the number you wanna substract from and then enter the second number.\n► ");
             scanf("%d %d",&number_one,&number_two);
             result = number_one-number_two;
+            break;
 
         case '3':
             printf("\nPlease enter the number you wanna multiply.\n► ");
             scanf("%d %d",&number_one,&number_two);
             result = number_one*number_two;
+            break;
 
         case '4':
             printf("\n\nPlease enter the number you wanna divide then enter the diviser.\n► ");
             scanf("%d %d",&number_one,&number_two);
             result = number_one/number_two;
+            break;
 
         case 'x':
             return 0;
